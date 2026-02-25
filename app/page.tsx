@@ -333,7 +333,10 @@ async function handleDelete(id: string) {
                   </span>
 
                   <button
-                   onClick={() => handleDelete(r.id)}
+                   onClick={() => {
+  if (!r.id) return;
+  handleDelete(r.id);
+}}
                     className="text-sm bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
                   >
                     Excluir
