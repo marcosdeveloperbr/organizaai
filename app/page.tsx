@@ -234,7 +234,7 @@ async function handleDelete(id: string) {
 
         <div className="flex gap-2">
           <button
-            onClick={login}
+            onClick={entrar}
             className="flex-1 bg-black text-white rounded px-3 py-2"
           >
             Entrar
